@@ -1,44 +1,73 @@
 # GlobalBank
 
-This template should help get you started developing with Vue 3 in Vite.
+GlobalBank — это веб-приложение, предназначенное для управления банковскими услугами. Приложение реализовано на Vue.js с использованием Vite для сборки и Pinia для управления состоянием. Включает главную страницу, форму регистрации и личный кабинет пользователя.
 
-## Recommended IDE Setup
+## Демо
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Вы можете ознакомиться с работой приложения, перейдя по следующей ссылке:  
+[GlobalBank Demo](https://rina2316.github.io/GlobalBank/)
 
-## Type Support for `.vue` Imports in TS
+## Особенности
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- **Главная страница** с приветствием и общей информацией о банке.
+- **Форма регистрации** для новых пользователей.
+- **Личный кабинет** для авторизованных пользователей с возможностью просмотра и управления личными данными.
+- Использование **Pinia** для управления состоянием приложения.
+- Быстрая сборка с **Vite**.
 
-## Customize configuration
+## Установка
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Для того чтобы запустить проект локально, выполните следующие шаги:
 
-## Project Setup
+1. Клонируйте репозиторий:
 
-```sh
-npm install
-```
+    ```bash
+    git clone https://github.com/CReaVirtu/GlobalBank.git
+    ```
 
-### Compile and Hot-Reload for Development
+2. Перейдите в каталог проекта:
 
-```sh
-npm run dev
-```
+    ```bash
+    cd GlobalBank
+    ```
 
-### Type-Check, Compile and Minify for Production
+3. Установите зависимости:
 
-```sh
-npm run build
-```
+    ```bash
+    npm install
+    ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+4. Запустите проект:
 
-```sh
-npm run test:unit
-```
+    ```bash
+    npm run dev
+    ```
 
-### Lint with [ESLint](https://eslint.org/)
+Приложение будет доступно по адресу [http://localhost:3000](http://localhost:3000).
+
+## Структура проекта
+
+- **src** — исходный код приложения:
+  - **components** — компоненты Vue.
+  - **store** — Pinia для управления состоянием.
+  - **views** — страницы приложения (главная, регистрация, личный кабинет).
+  - **assets** — ресурсы, такие как изображения и стили.
+  
+- **public** — статичные файлы, которые будут доступны для загрузки.
+
+## Использование
+
+1. Перейдите на главную страницу, чтобы ознакомиться с приложением.
+2. Для регистрации создайте учетную запись, заполнив форму регистрации.
+3. После регистрации войдите в личный кабинет, чтобы просматривать и редактировать свои данные.
+
+## Тестирование
+
+Для запуска тестов используйте команду:
+
+```bash
+npm run test
+
 
 ```sh
 npm run lint
